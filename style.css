@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#640707;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+.body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+}
+.logo
+{
+    height: 150px;
+    opacity: 0.6;
+    border-radius: 50%;
+    display: inline-block;
+}
+nav{
+    display: inline-flex;
+ 
+}
+header{
+    background-image: url('tea.png ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    opacity:0.;
+}
+.hello
+{ 
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-left: 50px;
+  
+}
+.main-nav{
+    float:right;
+    margin-top: 60 px;
+   
+  
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+    padding: 25px 20px 20px 25px;
+    
+
+}
+.main-nav li a{
+    color: rgb(214, 112, 64);
+    text-decoration: none;
+    font-size: 110%;
+ 
+   
+    
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid whitesmoke ;
+}
+.main-content-header
+{
+    position: relative;
+   top: 205px;
+
+}
+ .main-content-header h1{
+     color:rgb(222, 238, 130);
+     font-size: 45px;
+     font-style: italic;
+     letter-spacing: 2px;
+     
+ } 
+
+.myyy-header a{
+    position: relative;
+    top:300px;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+  
+.btn-full{
+    background-color: transparent;
+    color: rgb(226, 141, 43);
+    margin-right:15px;
+    border: 1px solid rgb(226, 141, 43);
+}
+.btn-full:hover{
+    background-color: whitesmoke;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: rgb(226, 141, 43);
+    margin-right: 15px;
+    border: 1px solid rgb(226, 141, 43) ;
+}
+.btn-nav:hover{
+    background-color: whitesmoke;
+}
+.tea{
+    animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange{
+    0%{color:rgb(255, 60, 0)}
+    25%{color:rgb(144, 35, 2)}
+    50%{color:brown}
+    100%{color:white}
+}
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{ font-size: 200%;}
+}
+@media only screen and (max-width:786px){
+    h1{ font-size:180% ;}
+    a{
+        font-size:90%;
+    }
+        
+}
+@media only screen and (max-width:750px)
+{
+    h1{ font-size:150% ;}
+
+.main-nav{display: none;}
+}
